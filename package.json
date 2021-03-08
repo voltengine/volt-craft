@@ -1,0 +1,17 @@
+{
+	"id": "voltcraft",
+	"version": "1.0.0",
+	"engineVersion": "1.0.0",
+	"title": "Voltcraft",
+	"description": "Sample Minecraft clone powered by Volt.",
+	"publisher": "Volt Engine",
+	"targets": [
+		"voltcraft"
+	],
+	"dependencies": [
+		{
+			"id": "voltpy",
+			"version": "1.0.0"
+		}
+	]
+}
