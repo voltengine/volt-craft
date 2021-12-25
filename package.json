@@ -1,17 +1,18 @@
 {
-	"id": "voltcraft",
-	"version": "1.0.0",
-	"engineVersion": "1.0.0",
-	"title": "Voltcraft",
+	"dependencies": {
+		"voltengine/volt": "0.1.0"
+	},
 	"description": "Sample Minecraft clone powered by Volt.",
-	"publisher": "Volt Engine",
-	"targets": [
-		"voltcraft"
+	"git": "https://github.com/voltengine/voltcraft.git",
+	"id": "voltengine/voltcraft",
+	"keywords": [
+		"minecraft",
+		"sample",
+		"3d",
+		"world",
+		"chunk",
+		"building"
 	],
-	"dependencies": [
-		{
-			"id": "voltpy",
-			"version": "1.0.0"
-		}
-	]
+	"license": "MIT",
+	"version": "0.1.0"
 }

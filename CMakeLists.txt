@@ -1,6 +1,14 @@
 cmake_minimum_required(VERSION 3.20)
-project(voltcraft VERSION 1.0.0 LANGUAGES CXX)
+project(Voltcraft LANGUAGES CXX)
 
-include("${VOLT_CMAKE_INCLUDE}")
+include("$ENV{VOLT_PATH}/cmake/Volt.cmake")
 
-add_subdirectory("src/voltcraft")
+volt_add_module(${PROJECT_NAME})
+
+target_compile_definitions(${PROJECT_NAME} PRIVATE
+	VOLTCRAFT_EXPORTS
+)
+
+target_link_libraries(${PROJECT_NAME}
+	Volt::Volt
+)
