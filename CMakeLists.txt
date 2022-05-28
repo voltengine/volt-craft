@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.20)
 project(Voltcraft LANGUAGES CXX)
 
+message("$ENV{VOLT_PATH}a")
 include("$ENV{VOLT_PATH}/cmake/Volt.cmake")
 
 volt_add_module(${PROJECT_NAME})
