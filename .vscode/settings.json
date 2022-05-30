@@ -1,7 +1,7 @@
 {
 	"cmake.generator": "Ninja",
 	"cmake.debugConfig": { // Just for developing the engine, to be removed later.
-		// "cwd": "D:/Library/Source/voltengine/voltcraft/cache/cmake/bin"
+		"cwd": "/home/rayferric/Source/voltengine/voltcraft/cache/cmake/bin"
 	},
 	"cmake.buildDirectory": "${workspaceFolder}/cache/cmake",
 	"cmake.configureArgs": [

@@ -9,40 +9,40 @@
 	#define VOLTCRAFT_API VOLT_API_IMPORT
 #endif
 
-// namespace voltcraft {
-// 	VOLT_COMPONENT class component {
-// 	public:
-// 		int number;
+namespace voltcraft {
+	VOLT_COMPONENT class component {
+	public:
+		int number;
 
-// 		component() = default;
+		component() = default;
 
-// 		component(const nlohmann::json &json) {
-// 			number = json["number"];
-// 		}
+		component(const nlohmann::json &json) {
+			number = json["number"];
+		}
 
-// 		operator nlohmann::json() const {
-// 			auto json = nlohmann::json::object();
-// 			json["number"] = number;
-// 			return json;
-// 		}
-// 	};
+		operator nlohmann::json() const {
+			auto json = nlohmann::json::object();
+			json["number"] = number;
+			return json;
+		}
+	};
 
-// 	VOLT_COMPONENT class alt_component {
-// 	public:
-// 		int alt_number;
+	// VOLT_COMPONENT class alt_component {
+	// public:
+	// 	int alt_number;
 
-// 		alt_component() = default;
+	// 	alt_component() = default;
 
-// 		alt_component(const nlohmann::json &json) {
-// 			alt_number = json["altNumber"];
-// 		}
+	// 	alt_component(const nlohmann::json &json) {
+	// 		alt_number = json["altNumber"];
+	// 	}
 
-// 		operator nlohmann::json() const {
-// 			auto json = nlohmann::json::object();
-// 			json["altNumber"] = alt_number;
-// 			return json;
-// 		}
-// 	};
+	// 	operator nlohmann::json() const {
+	// 		auto json = nlohmann::json::object();
+	// 		json["altNumber"] = alt_number;
+	// 		return json;
+	// 	}
+	// };
 
 // 	VOLT_SYSTEM class test_system : public volt::ecs::system {
 // 	public:
@@ -63,4 +63,4 @@
 // 			std::cout << "Heyo after reload!!! :D\n";
 // 		}
 // 	};
-// }
+}
