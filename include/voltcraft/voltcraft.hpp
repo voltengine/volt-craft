@@ -27,32 +27,30 @@ namespace voltcraft {
 		}
 	};
 
-	// VOLT_COMPONENT class alt_component {
-	// public:
-	// 	int alt_number;
+	VOLT_COMPONENT class alt_component {
+	public:
+		int alt_number;
 
-	// 	alt_component() = default;
+		alt_component() = default;
 
-	// 	alt_component(const nlohmann::json &json) {
-	// 		alt_number = json["altNumber"];
-	// 	}
+		alt_component(const nlohmann::json &json) {
+			alt_number = json["altNumber"];
+		}
 
-	// 	operator nlohmann::json() const {
-	// 		auto json = nlohmann::json::object();
-	// 		json["altNumber"] = alt_number;
-	// 		return json;
-	// 	}
-	// };
+		operator nlohmann::json() const {
+			auto json = nlohmann::json::object();
+			json["altNumber"] = alt_number;
+			return json;
+		}
+	};
 
-// 	VOLT_SYSTEM class test_system : public volt::ecs::system {
-// 	public:
-// 		test_system() {}
-
-// 		void update(float delta) const override {
-// 			volt::math::fvec3 y(5);
-// 			volt::math::dquat a(3);
-// 			volt::math::fquat b(3);
-// 			auto x = a + b;
+	VOLT_SYSTEM class test_system : public volt::ecs::system {
+	public:
+		void update(float delta) const override {
+			volt::math::fvec3 y(5);
+			volt::math::dquat a(3);
+			volt::math::fquat b(3);
+			auto x = a + b;
 
 // #ifdef VOLT_DEVELOPMENT
 // 			volt::assets::list_assets("volt");
@@ -60,7 +58,7 @@ namespace voltcraft {
 // 			volt::assets::asset_ref<volt::core::assets::text> text = volt::assets::load("volt/text");
 // 			std::cout << text->text;
 
-// 			std::cout << "Heyo after reload!!! :D\n";
-// 		}
-// 	};
+			std::cout << "Heyo after reload!!! :D\n";
+		}
+	};
 }

@@ -5,8 +5,9 @@
 	},
 	"cmake.buildDirectory": "${workspaceFolder}/cache/cmake",
 	"cmake.configureArgs": [
-		"-DVOLT_DEVELOPMENT=ON",
-		"-DVOLT_GPU_DEBUG=ON"
+		"-D VOLT_DEVELOPMENT=ON",
+		"-D VOLT_GPU_DEBUG=ON",
+		"-D CMAKE_TOOLCHAIN_FILE=${env:VOLT_PATH}/cmake/toolchains/LinuxAMD64-LinuxAMD64.cmake"
 	],
 	"cmake.configureOnOpen": false,
     "cmake.autoSelectActiveFolder": false
